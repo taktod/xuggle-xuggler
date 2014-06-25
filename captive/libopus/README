@@ -1,0 +1,7 @@
+Libopus Version 1.1 RC1
+Software Homepage: http://www.opus-codec.org/
+Source Download URL: http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz
+
+Patches:
+ - configure.ac has been modified to support the current LT_INIT macro, and autoreconf was run
+  

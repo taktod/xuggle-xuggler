@@ -199,6 +199,8 @@ AC_CONFIG_FILES([Makefile
                  libtheora/incarcerate
                  libspeex/Makefile
                  libspeex/incarcerate
+                 libopus/Makefile
+                 libopus/incarcerate
                  libx264/Makefile
                  libx264/incarcerate
                  libmp3lame/Makefile
