@@ -5,7 +5,7 @@ dnl Initialization and Versioning
 dnl ------------------------------------------------
 
 
-AC_INIT([libvorbis],[1.3.2],[vorbis-dev@xiph.org])
+AC_INIT([libvorbis],[1.3.3],[vorbis-dev@xiph.org])
 
 AC_CONFIG_SRCDIR([lib/mdct.c])
 
@@ -25,15 +25,15 @@ dnl - interfaces added -> increment AGE
 dnl - interfaces removed -> AGE = 0
 
 V_LIB_CURRENT=4
-V_LIB_REVISION=5
+V_LIB_REVISION=6
 V_LIB_AGE=4
 
 VF_LIB_CURRENT=6
-VF_LIB_REVISION=4
+VF_LIB_REVISION=5
 VF_LIB_AGE=3
 
 VE_LIB_CURRENT=2
-VE_LIB_REVISION=8
+VE_LIB_REVISION=9
 VE_LIB_AGE=0
 
 AC_SUBST(V_LIB_CURRENT)
@@ -199,8 +199,8 @@ else
 		PROFILE="-pg -g -O20 -D__NO_MATH_INLINES -fsigned-char $sparc_cpu" ;;
 	*-*-darwin*)
 		DEBUG="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -O0 -fsigned-char"
-		CFLAGS="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -O3 -ffast-math -fsigned-char"
-		PROFILE="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -pg -O3 -ffast-math -fsigned-char";;
+		CFLAGS="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -O4 -ffast-math -fsigned-char"
+		PROFILE="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -pg -O4 -ffast-math -fsigned-char";;
 	*-*-os2*)
 		# Use -W instead of -Wextra because gcc on OS/2 is an old version.
 		DEBUG="-g -Wall -W -D_REENTRANT -D__NO_MATH_INLINES -fsigned-char"
